@@ -92,7 +92,7 @@ while not end:
             print("Sorry, that's not enough money. Money refunded.")
         elif choice_checker_items(choice):
             money += MENU[choice]['cost']
-            change = round(total - MENU[choice]['cost'], 1)
+            change = round(total - MENU[choice]['cost'], 2)
             if change != 0:
                 print(f"Here is your ${change} change.")
             print(f"Enjoy your {choice}")
